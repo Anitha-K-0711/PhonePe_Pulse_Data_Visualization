@@ -78,6 +78,7 @@ Also, If the viewer of the app is interested on further graphs and charts to exp
 The Users data mainly contains the registered users count and app openings via different mobile brands in each state and district. I have used different graphs available in plotly to represent this data. I have created 4 different tabs and analysed the user data of phonepe in detail.
 
 Those tabs are,
+
 a. State Analysis
 
 b. District Analysis
