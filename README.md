@@ -3,12 +3,19 @@ Hi all! I created this App to visualize PhonePe Pulse github repository data (ht
 
 #### Requirements of the project
 Python
+
 Pandas
+
 GitHub Cloning
+
 MySQL
+
 MySQL-Connector-Python
+
 Streamlit
+
 Plotly
+
 
 #### Link for web app: 
 
@@ -31,9 +38,13 @@ Repeat the above process for all csv files to insert into Mysql database. Refer 
 #### DASHBOARD
 #### The main components of dashboard are
 1 GEOGRAPHICAL ANALYSIS
+
 2 TRANSACTION ANALYSIS
+
 3 USER DATA ANALYSIS
+
 4 TOP STATES DATA ANALYSIS
+
 
 Refer main.py for the full code of this entire process.
 
@@ -47,10 +58,15 @@ The Transaction Analysis mainly contains the visualization of total Transactions
 
 Those tabs are,
 a. State Analysis
+
 b. District Analysis
+
 c. Payment Type Analysis
+
 d. Year-Wise Analysis
+
 e. Overall Analysis
+
 
 The main functions I have used for the above are px.bar and px.pie ('px' stands for Plotly Express)
 For each and every analysis, I have provided details of the figure and important insights and observations of the figure to its right side of the dashboard.
@@ -62,9 +78,13 @@ The Users data mainly contains the registered users count and app openings via d
 
 Those tabs are,
 a. State Analysis
+
 b. District Analysis
+
 c. User Device Year-Wise Analysis
+
 d. Overall Analysis
+
 
 The main functions I have used for the above are go.Bar, go.Pie px.bar, px.treemap and px.pie ('px' stands for Plotly Express & 'go' stands for Graph Objects)
 
