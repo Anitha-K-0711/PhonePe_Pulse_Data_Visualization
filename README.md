@@ -57,6 +57,7 @@ The main functions I have used to create this map are Plotly scatter_geo for plo
 The Transaction Analysis mainly contains the visualization of total Transactions count and total amount in each state and district. I have used different graphs available in plotly to represent this data. I have created 5 different tabs and analysed the transaction data of phonepe in detail.
 
 Those tabs are,
+
 a. State Analysis
 
 b. District Analysis
