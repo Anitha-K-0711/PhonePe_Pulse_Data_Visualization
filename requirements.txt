@@ -47,7 +47,6 @@ six==1.16.0
 smmap==5.0.0
 streamlit==1.18.1
 streamlit-image-comparison==0.0.3
-sqlalchemy==2.0.9
 tenacity==8.2.1
 termcolor==2.2.0
 terminaltables==3.1.10
@@ -59,6 +58,7 @@ typing_extensions==4.4.0
 tzdata==2022.7
 tzlocal==4.2
 urllib3==1.26.14
+SQLAlchemy~=2.0.9
 validators==0.20.0
 watchdog==2.2.1
 zipp==3.13.0
