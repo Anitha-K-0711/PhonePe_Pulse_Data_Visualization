@@ -47,6 +47,7 @@ six==1.16.0
 smmap==5.0.0
 streamlit==1.18.1
 streamlit-image-comparison==0.0.3
+sqlalchemy==2.0.9
 tenacity==8.2.1
 termcolor==2.2.0
 terminaltables==3.1.10
