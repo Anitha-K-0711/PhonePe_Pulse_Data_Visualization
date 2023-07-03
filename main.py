@@ -10,24 +10,45 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # mysql server connection using sqlalchemy
-connection = create_engine(
-    "mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="password", db="phonepe_pulse"))
+# connection = create_engine(
+#     "mysql+pymysql://{user}:{pw}@localhost/{db}".format(user="root", pw="password", db="phonepe_pulse"))
 
 # fetching datas from mysql using pandas
-query1 = 'select * from agg_trans_table'
-df_agg_trans = pd.read_sql_query(sql=text(query1), con=connection.connect())
-query2 = 'select * from agg_user_summary_table'
-df_agg_user_summary = pd.read_sql_query(sql=text(query2), con=connection.connect())
-query3 = 'select * from agg_user_table'
-df_agg_user = pd.read_sql_query(sql=text(query3), con=connection.connect())
-query4 = 'select * from lat_long_district'
-df_lat_long_district = pd.read_sql_query(sql=text(query4), con=connection.connect())
-query5 = 'select * from lat_long_state'
-df_lat_long_state = pd.read_sql_query(sql=text(query5), con=connection.connect())
-query6 = 'select * from map_trans_table'
-df_map_trans = pd.read_sql_query(sql=text(query6), con=connection.connect())
-query7 = 'select * from map_user_table'
-df_map_user = pd.read_sql_query(sql=text(query7), con=connection.connect())
+
+# query1 = 'select * from agg_trans_table'
+# df_agg_trans = pd.read_sql_query(sql=text(query1), con=connection.connect())
+
+df_agg_trans = pd.read_csv('data/agg_trans_tabel.csv')
+
+# query2 = 'select * from agg_user_summary_table'
+# df_agg_user_summary = pd.read_sql_query(sql=text(query2), con=connection.connect())
+
+df_agg_user_summary = pd.read_csv('data/agg_user_summary_table.csv')
+
+# query3 = 'select * from agg_user_table'
+# df_agg_user = pd.read_sql_query(sql=text(query3), con=connection.connect())
+
+df_agg_user = pd.read_csv('data/agg_user_table.csv')
+
+# query4 = 'select * from lat_long_district'
+# df_lat_long_district = pd.read_sql_query(sql=text(query4), con=connection.connect())
+
+df_lat_long_district = pd.read_csv('data/lat_long_district.csv')
+
+# query5 = 'select * from lat_long_state'
+# df_lat_long_state = pd.read_sql_query(sql=text(query5), con=connection.connect())
+
+df_lat_long_state = pd.read_csv('data/lat_long_state.csv')
+
+# query6 = 'select * from map_trans_table'
+# df_map_trans = pd.read_sql_query(sql=text(query6), con=connection.connect())
+
+df_map_trans = pd.read_csv('data/map_trans_table.csv')
+
+# query7 = 'select * from map_user_table'
+# df_map_user = pd.read_sql_query(sql=text(query7), con=connection.connect())
+
+df_map_user = pd.read_csv('data/map_user_table.csv')
 
 image  = Image.open('logo.png') # uploading phonepe logo
 
