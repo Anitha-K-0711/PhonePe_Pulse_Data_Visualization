@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 # query1 = 'select * from agg_trans_table'
 # df_agg_trans = pd.read_sql_query(sql=text(query1), con=connection.connect())
 
-df_agg_trans = pd.read_csv('data/agg_trans_tabel.csv')
+df_agg_trans = pd.read_csv('data/agg_trans_table.csv')
 
 # query2 = 'select * from agg_user_summary_table'
 # df_agg_user_summary = pd.read_sql_query(sql=text(query2), con=connection.connect())
