@@ -50,14 +50,6 @@ df_map_trans = pd.read_csv('data/map_trans_table.csv')
 
 df_map_user = pd.read_csv('data/map_user_table.csv')
 
-# df_agg_trans.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_agg_user_summary.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_agg_user.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_lat_long_district.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_lat_long_state.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_map_trans.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-# df_map_user.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-
 image  = Image.open('logo.png') # uploading phonepe logo
 
 # Title for the dashboard and a description on this app
@@ -83,7 +75,6 @@ df = df.reset_index()
 
 df_lat_long_state = df_lat_long_state.sort_values(by='state')
 df_lat_long_state = df_lat_long_state.reset_index(drop=True)
-# del df_lat_long_state['index']
 
 state_list = df_agg_trans['state'].unique()
 state_list = tuple(state_list)
@@ -98,8 +89,6 @@ df2 = pd.read_csv('df1.csv')
 
 df_state_final = pd.merge(df2, df_lat_long_state, how="outer", on="state")
 df_district_final = pd.merge(df_map_trans, df_lat_long_district, how="outer", on=["state", "district_name"])
-# del df_district_final["index_x"]
-# del df_district_final["index_y"]
 
 # GEOGRAPHICAL ANALYSIS
 st.write('## :green[GEOGRAPHICAL ANALYSIS]')
@@ -392,7 +381,6 @@ with tab5:
         st.plotly_chart(fig, use_container_width=True)
     with colF2:
         st.write('#### :green[Year Wise Transaction Analysis in India]')
-        # del year_df_final['index']
         st.markdown(year_df_final.style.hide(axis="index").to_html(), unsafe_allow_html=True)
         st.write(' ')
         st.info(
@@ -571,7 +559,6 @@ with tab4:
         st.plotly_chart(fig)
 
     with colN2:
-        # del years_table['index']
         st.markdown(years_table.style.hide(axis='index').to_html(), unsafe_allow_html=True)
         st.info(
             """
