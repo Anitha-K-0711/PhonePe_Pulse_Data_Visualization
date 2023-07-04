@@ -17,7 +17,7 @@ Streamlit
 Plotly
 
 
-#### Link for web app: 
+#### Link for web app: https://phonepepulsedatavisualization-p4zmseerum.streamlit.app/
 
 #### Extracting data from github and converting it to csv files
 The dataset I used in my streamlit web app to visualize and analyse is taken from https://github.com/PhonePe/pulse.
@@ -33,7 +33,9 @@ After preprocessing the datas, It is ready to insert the csv files to MySQL data
 
 To insert datas into Mysql I used sqlalchemy (In order to establish connection you want pymysql also). In order to insert csv to Mysql we need to establish connection to Mysql server. After connecting we create table to insert csv file to Mysql database. 
 
-Repeat the above process for all csv files to insert into Mysql database. Refer data_preprocessing_phonepe.ipynb for the full code of this entire process.
+Repeat the above process for all csv files to insert into Mysql database. 
+
+Refer data_preprocessing_phonepe.ipynb for the full code of this entire process.
 
 #### DASHBOARD
 #### The main components of dashboard are
