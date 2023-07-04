@@ -50,6 +50,14 @@ df_map_trans = pd.read_csv('data/map_trans_table.csv')
 
 df_map_user = pd.read_csv('data/map_user_table.csv')
 
+df_agg_trans.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_agg_user_summary.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_agg_user.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_lat_long_district.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_lat_long_state.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_map_trans.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+df_map_user.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
+
 image  = Image.open('logo.png') # uploading phonepe logo
 
 # Title for the dashboard and a description on this app
