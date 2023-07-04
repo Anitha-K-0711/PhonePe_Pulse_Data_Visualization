@@ -57,7 +57,7 @@ df_lat_long_district.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
 df_lat_long_state.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
 df_map_trans.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
 df_map_user.rename(columns = {'Unnamed: 0' : 'index'}, inplace = True)
-
+st.write(df_lat_long_state.columns)
 image  = Image.open('logo.png') # uploading phonepe logo
 
 # Title for the dashboard and a description on this app
