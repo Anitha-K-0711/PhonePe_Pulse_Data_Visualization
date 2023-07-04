@@ -392,7 +392,7 @@ with tab5:
         st.plotly_chart(fig, use_container_width=True)
     with colF2:
         st.write('#### :green[Year Wise Transaction Analysis in India]')
-        del year_df_final['index']
+        # del year_df_final['index']
         st.markdown(year_df_final.style.hide(axis="index").to_html(), unsafe_allow_html=True)
         st.write(' ')
         st.info(
@@ -571,7 +571,7 @@ with tab4:
         st.plotly_chart(fig)
 
     with colN2:
-        del years_table['index']
+        # del years_table['index']
         st.markdown(years_table.style.hide(axis='index').to_html(), unsafe_allow_html=True)
         st.info(
             """
